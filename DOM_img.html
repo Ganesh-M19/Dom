@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="hell" class="by">hello world</div>
+ <input type="button" value="add tag" onclick="dm()">
+ <input type="button" value="add src" onclick="p()">
+ <input type="button" value="add src" onclick="s()">
+
+
+
+    <script>
+function dm(){
+var a = document.createElement("img");
+var s = document.getElementById("hell")
+s.appendChild(a)
+}
+function p(){
+document.getElementsByTagName("img")[0].setAttribute("src","landscape-anime-digital-art-fantasy-art-wallpaper-thumb.jpg")
+}
+function s(){
+document.getElementsByTagName("img")[0].style.cssText="width:300px;height=400px;margin-left:20rem;"
+}
+    </script>
+</body>
+</html>

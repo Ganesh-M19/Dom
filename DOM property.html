@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <input type="button" value="reset">
+    <button>submit</button> -->
+    <div>hcAJchsjc</div>
+    <div>hcAJchsjc</div>
+    <p id="p1">sdhbcdjkcnzjcn</p>
+    <h1 class="h11">dhbchcsaJK</h1>
+    <h1 class="h11">hiii</h1>
+    <a href="google.com" id="b">ggg</a>
+    <div id="hell" class="by">hello world</div>
+
+    <button onclick="a()">change div</button>
+    <button onclick="b()">change p</button>
+    <button onclick="c()">change h</button>
+
+    <script>
+        function a() {
+            let head = document.getElementsByTagName('div')[0].innerHTML = 'JS DOM'
+        }
+
+        function b() {
+            let a = document.getElementById('p1').innerHTML = "ganesh"
+            let b = document.getElementById('p1').style.fontFamily = "cursive"
+            let c = document.getElementById('p1').style.backgroundColor = "red"
+
+            /* css text property......................................*/
+            let d = document.getElementById('p1').style.cssText = "font-size:2rem;font-weight:bold;color:yellow;background-image: repeating-radial-gradient(rgba(24,78,24,0.696) 10%,rgba(1,0,0,0.696) 20%,rgba(196,13,13,0.696) 20%);;width:400px;height:400px; background-color:red;";
+        }
+        let c = () => {
+        //     let classes = document.getElementsByClassName('h11')[1].innerHTML = 'GANESH'
+        //     let clas = document.getElementsByClassName('h11')[1].style.backgroundColor = 'red'
+        //   document.getElementById("b").removeAttribute("href")
+        //   document.getElementById("hell").setAttribute("class","me")
+        //    var z=document.createElement("div")
+        //   document.getElementById("hell").appendChild(z)
+        //   console.log(document.getElementById("hell").getAttribute("class"))
+
+
+        var p = document.createElement("div");
+        var s = document.createTextNode("hello i am a div");
+        p.appendChild(s)
+
+        var e = document.getElementById("hell");
+        e.appendChild(p)
+
+        document.getElementsByTagName("div")[3].style.backgroundColor="red"
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
